@@ -1,6 +1,7 @@
 ﻿using IPA;
 using IPA.Config;
 using IPA.Utilities;
+using System;
 using UnityEngine.SceneManagement;
 using IPALogger = IPA.Logging.Logger;
 
@@ -19,7 +20,10 @@ namespace beatsaber_clock
             config = cfgProvider.MakeLink<PluginConfig>((p, v) =>
             {
                 if (v.Value == null || v.Value.RegenerateConfig)
-                    p.Store(v.Value = new PluginConfig() { RegenerateConfig = false });
+                    p.Store(v.Value = new PluginConfig() { 
+                        RegenerateConfig = false,
+                        TimeFormat = "hh:mm tt"
+                    });
                 config = v;
             });
         }
@@ -41,7 +45,7 @@ namespace beatsaber_clock
 
         public void OnUpdate()
         {
-
+            Logger.log.Debug(DateTime.Now.ToString(config.Value.TimeFormat));
         }
 
         public void OnActiveSceneChanged(Scene prevScene, Scene nextScene)

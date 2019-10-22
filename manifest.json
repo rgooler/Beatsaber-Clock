@@ -1,10 +1,14 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/nike4613/ModSaber-MetadataFileSchema/master/Schema.json",
-  "author": "Clock",
+  "author": "jippen",
   "description": "A simple clock so you don't stay up too late playing Beat Saber",
-  "gameVersion": "0.12.4",
-  "id": null,
+  "gameVersion": "1.4.2",
+  "id": "beatsaber-clock",
   "name": "beatsaber-clock",
   "version": "0.0.1-alpha",
-  "features": []
+  "features": [],
+  "icon": "icon.png",
+  "links": {
+	"project-source": "https://github.com/rgooler/Beatsaber-Clock"
+  }
 }
