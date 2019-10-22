@@ -1,6 +1,6 @@
 ﻿using IPALogger = IPA.Logging.Logger;
 
-namespace $safeprojectname$
+namespace beatsaber_clock
 {
     internal static class Logger
     {

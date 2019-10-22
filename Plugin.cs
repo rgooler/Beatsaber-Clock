@@ -4,7 +4,7 @@ using IPA.Utilities;
 using UnityEngine.SceneManagement;
 using IPALogger = IPA.Logging.Logger;
 
-namespace $safeprojectname$
+namespace beatsaber_clock
 {
     public class Plugin : IBeatSaberPlugin
     {
@@ -22,7 +22,7 @@ namespace $safeprojectname$
                     p.Store(v.Value = new PluginConfig() { RegenerateConfig = false });
                 config = v;
             });
-    }
+        }
 
         public void OnApplicationStart()
         {

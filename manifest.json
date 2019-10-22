@@ -1,10 +1,10 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/nike4613/ModSaber-MetadataFileSchema/master/Schema.json",
-  "author": "",
-  "description": "",
+  "author": "Clock",
+  "description": "A simple clock so you don't stay up too late playing Beat Saber",
   "gameVersion": "0.12.4",
   "id": null,
-  "name": "$projectname$",
+  "name": "beatsaber-clock",
   "version": "0.0.1-alpha",
   "features": []
 }
